@@ -34,3 +34,44 @@ var TAMANHO_DO_ARRAY = 3
 // console.log(!![])
 // console.log(!!{})
 // console.log(!!function () {})
+
+// inicializa array
+var vetor = ['3', 'str', '#', 'true']
+
+// console.log(vetor)
+// console.log(vetor[1])
+// // atributo importante length
+// console.log(vetor.length)
+
+// vetor.push(999)
+// vetor.push(111)
+vetor.push(555, 444, 333)
+
+// como testar se é um array
+// if (Array.isArray(vetor)) {
+//   for (var i = 0; i < vetor.length; i++) {
+//     console.log(vetor[i])
+//   }
+// } else {
+//   console.log(vetor)
+// }
+
+//console.log(vetor.join(' '))
+
+const pessoas = [
+  {
+    nome: {
+      primeiro: 'romeu',
+      ultimo: 'casarotto',
+    },
+    idade: 30,
+    ocupacoes: ['programador'],
+  },
+  {
+    nome: 'isaac',
+    idade: 30,
+    ocupacoes: ['professor'],
+  },
+]
+
+console.log(pessoas[0].nome.primeiro)
