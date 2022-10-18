@@ -75,3 +75,13 @@ const pessoas = [
 ]
 
 console.log(pessoas[0].nome.primeiro)
+
+function multiplica(x, y) {
+  let acumulador = 0
+  for (let i = 0; i < y; i++) {
+    acumulador += x
+  }
+  return acumulador
+}
+
+console.log(multiplica(3, 8))
