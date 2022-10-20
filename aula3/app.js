@@ -87,12 +87,26 @@ texto e termo, como o exemplo e teste se
 o conteúdo de texto contém o conteúdo do termo.
 */
 
-procuraTermo({
+// procuraTermo({
+//   texto: "O rato roeu a roupa do rei de Roma.",
+//   termo: "rato"
+// }); // true
+
+// procuraTermo({
+//   texto: "O rato roeu a roupa do rei de Roma.",
+//   termo: "batata"
+// }); // false
+
+
+const obj = {
   texto: "O rato roeu a roupa do rei de Roma.",
   termo: "rato"
-}); // true
+};
+// console.log(obj);
+// console.log(JSON.stringify(obj));
 
-procuraTermo({
-  texto: "O rato roeu a roupa do rei de Roma.",
-  termo: "batata"
-}); // false
+function testeTernario(param) {
+  return param.texto.includes(param.termo);
+}
+
+console.log(testeTernario(obj));
