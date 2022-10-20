@@ -105,8 +105,13 @@ const obj = {
 // console.log(obj);
 // console.log(JSON.stringify(obj));
 
-function testeTernario(param) {
+function testaTermo(param) {
   return param.texto.includes(param.termo);
 }
 
-console.log(testeTernario(obj));
+console.log(testaTermo(obj));
+
+function testaTermoDestruct(param) {
+  const { texto, termo } = param;
+  return texto.includes(termo);
+}
