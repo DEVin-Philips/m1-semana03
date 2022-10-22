@@ -5,6 +5,7 @@ function montaMensagem(pessoa) {
   return `Esta é ${nome}, tem ${idade} anos e é ${profissao}.`;
 }
 
+// versao arrow com destruct nos parametros
 const montaArrow = ({ nome, idade, profissao }) =>
  `Esta é ${nome}, tem ${idade} anos e é ${profissao}.`;
 
